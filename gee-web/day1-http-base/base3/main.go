@@ -27,5 +27,7 @@ func main() {
 		}
 	})
 
-	r.Run(":9999")
+	//debug helpful
+	//4example: log.Fatal(r.Run("9999")) "listen tcp: address 9999: missing port in address"
+	log.Fatal(r.Run(":9999"))
 }
